@@ -10,14 +10,13 @@
   * [Google chrome](#google-chrome)
   * [Python](#python)
   * [Oh my zsh](#oh-my-zsh)
+  * [Docker](#docker)
   * [Docker compose](#docker-compose)
   * [Podman](#podman)
   * [Postgresql](#postgresql)
   * [Ripgrep](#ripgrep)
   * [VSCode](#vscode)
   * [Bat](#bat)
-
-
 <!-- TOC -->
 
 ## Update system
@@ -90,9 +89,20 @@ nano ~/.zshrc -> add `export PATH=/home/savilard/.python3.10/bin:$PATH`
 ## [Oh my zsh](https://ohmyz.sh/)
 ```shell
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+nano ~/.zshrc -> plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
-https://linuxconfig.org/manjaro-linux-docker-installation
+## [Docker](https://www.docker.com/)
+```shell
+sudo pacman -S docker
+sudo systemctl start docker.service
+sudo systemctl enable docker.service
+sudo docker version
+sudo usermod -aG docker $USER
+reboot
+```
 
 ## [Docker compose](https://github.com/docker/compose)
 ```shell
