@@ -1,7 +1,7 @@
-# Setup manjaro for python dev
+# Setup manjaro
 
 <!-- TOC -->
-* [Setup manjaro for python dev](#setup-manjaro-for-python-dev)
+* [Setup manjaro](#setup-manjaro)
   * [Update system](#update-system)
   * [Oh my zsh](#oh-my-zsh)
   * [1Password](#1password)
