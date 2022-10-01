@@ -147,5 +147,3 @@ sudo pacman -S code
 ```shell
 sudo pacman -S bat
 ```
-
-
