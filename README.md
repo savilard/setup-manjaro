@@ -110,11 +110,13 @@ pamac build google-chrome
 https://www.python.org/downloads/
 ```shell
 mv Downloads/Python-3.10.7.tar.xz . 
-tar -xvf Python-3.10.7.tar.xz 
-/configure --prefix=/home/savilard/.python3.10 --enable-optimizations
+tar -xvf Python-3.10.7.tar.xz
+cd Python-3.10.7 
+/configure --prefix=/home/{username}/.python3.10 --enable-optimizations
+make
 sudo make altinstall
-nano ~/.zshrc -> add `export PATH=/home/savilard/.python3.10/bin:$PATH`
 ```
+Add to ~/.zshrc `export PATH=/home/savilard/.python3.10/bin:$PATH`
 
 ## [Docker](https://www.docker.com/)
 ```shell
