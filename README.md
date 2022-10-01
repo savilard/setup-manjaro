@@ -20,6 +20,7 @@
   * [Bat](#bat)
   * [Fira-code font](#fira-code-font)
   * [Pipx](#pipx)
+  * [VirtualBox](#virtualbox)
 <!-- TOC -->
 
 ## Update system
@@ -167,4 +168,27 @@ sudo pacman -S ttf-fira-code
 ## Pipx
 ```shell
 sudo pacman -S python-pipx
+```
+
+## VirtualBox
+To install VirtualBox, you need to install the packages virtualbox and linux*-virtualbox-host-modules. 
+The latter must match the version of the kernel you are running. To list what kernels is installed use mhwd (example)
+
+```shell
+$ mhwd-kernel -li
+
+Currently running: 5.4.0-1-MANJARO (linux54)
+The following kernels are installed in your system:
+   * linux54
+```
+To install VirtualBox and the kernel modules for your installed kernel enter the following command in the terminal:
+
+```shell
+$ sudo pacman -Syu virtualbox linux54-virtualbox-host-modules
+```
+Once the installation has completed, it will then be necessary to add the VirtualBox Module to your kernel. 
+The easy way is to simply reboot your system. Otherwise, to start using VirtualBox immediately, enter the following command:
+
+```shell
+$ sudo vboxreload
 ```
