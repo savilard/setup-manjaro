@@ -19,6 +19,7 @@
   * [VSCode](#vscode)
   * [Bat](#bat)
   * [Fira-code font](#fira-code-font)
+  * [Pipx](#pipx)
 <!-- TOC -->
 
 ## Update system
