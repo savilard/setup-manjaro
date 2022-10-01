@@ -79,9 +79,10 @@ sudo pacman -S git
     ```
   
 * With 1Password
-  * SSH
-    * https://blog.1password.com/1password-ssh-agent/
-    * https://developer.1password.com/docs/ssh/get-started
+  * https://blog.1password.com/1password-ssh-agent/
+  * https://developer.1password.com/docs/ssh/get-started
+  * https://blog.1password.com/git-commit-signing/
+
 
 ## [Neovim](https://neovim.io/)
 ```shell
