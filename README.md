@@ -87,6 +87,7 @@ sudo pacman -S git
   * https://blog.1password.com/1password-ssh-agent/
   * https://developer.1password.com/docs/ssh/get-started
   * https://blog.1password.com/git-commit-signing/
+  * https://github.blog/changelog/2022-08-23-ssh-commit-verification-now-supported/
 
 
 ## [Neovim](https://neovim.io/)
