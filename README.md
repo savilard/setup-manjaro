@@ -133,6 +133,7 @@ sudo pacman -S docker-compose
 ## [Podman](https://podman.io/)
 ```shell
 sudo pacman -S podman
+sudo pacman -S podman-compose
 ```
 
 ## [Postgresql](https://www.postgresql.org/)
@@ -158,4 +159,9 @@ sudo pacman -S bat
 ## Fira-code font
 ```shell
 sudo pacman -S ttf-fira-code
+```
+
+## Pipx
+```shell
+sudo pacman -S python-pipx
 ```
