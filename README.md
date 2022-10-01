@@ -3,13 +3,14 @@
 <!-- TOC -->
 * [Setup manjaro for python dev](#setup-manjaro-for-python-dev)
   * [Update system](#update-system)
+  * [Oh my zsh](#oh-my-zsh)
+  * [1Password](#1password)
   * [Poetry](#poetry)
   * [Git](#git)
   * [Neovim](#neovim)
   * [Tmux](#tmux)
   * [Google chrome](#google-chrome)
   * [Python](#python)
-  * [Oh my zsh](#oh-my-zsh)
   * [Docker](#docker)
   * [Docker compose](#docker-compose)
   * [Podman](#podman)
@@ -22,6 +23,22 @@
 ## Update system
 ```shell
 sudo pacman -Syu
+```
+
+## [Oh my zsh](https://ohmyz.sh/)
+```shell
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+nano ~/.zshrc -> plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+```
+
+## 1Password
+```shell
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
+git clone https://aur.archlinux.org/1password.git
+cd 1password
+makepkg -si
 ```
 
 ## [Poetry](https://python-poetry.org/docs/#installation)
@@ -60,6 +77,11 @@ sudo pacman -S git
     sudo dnf install xclip
     xclip -sel clip < ~/.ssh/id_rsa.pub
     ```
+  
+* With 1Password
+  * SSH
+    * https://blog.1password.com/1password-ssh-agent/
+    * https://developer.1password.com/docs/ssh/get-started
 
 ## [Neovim](https://neovim.io/)
 ```shell
@@ -84,14 +106,6 @@ tar -xvf Python-3.10.7.tar.xz
 /configure --prefix=/home/savilard/.python3.10 --enable-optimizations
 sudo make altinstall
 nano ~/.zshrc -> add `export PATH=/home/savilard/.python3.10/bin:$PATH`
-```
-
-## [Oh my zsh](https://ohmyz.sh/)
-```shell
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-nano ~/.zshrc -> plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
 ## [Docker](https://www.docker.com/)
