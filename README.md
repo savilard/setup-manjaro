@@ -18,6 +18,7 @@
   * [Ripgrep](#ripgrep)
   * [VSCode](#vscode)
   * [Bat](#bat)
+  * [Fira-code font](#fira-code-font)
 <!-- TOC -->
 
 ## Update system
@@ -151,4 +152,9 @@ sudo pacman -S code
 ## [Bat](https://github.com/sharkdp/bat)
 ```shell
 sudo pacman -S bat
+```
+
+## Fira-code font
+```shell
+sudo pacman -S ttf-fira-code
 ```
