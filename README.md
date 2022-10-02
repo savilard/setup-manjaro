@@ -10,7 +10,7 @@
   * [Neovim](#neovim)
   * [Tmux](#tmux)
   * [Google chrome](#google-chrome)
-  * [Python](#python)
+  * [Pyenv](#pyenv)
   * [IPython](#ipython)
   * [Docker](#docker)
   * [Docker compose](#docker-compose)
@@ -108,17 +108,14 @@ sudo pacman -S tmux
 pamac build google-chrome
 ```
 
-## [Python](https://www.python.org)
-https://www.python.org/downloads/
+## Pyenv
 ```shell
-mv Downloads/Python-3.10.7.tar.xz . 
-tar -xvf Python-3.10.7.tar.xz
-cd Python-3.10.7 
-/configure --prefix=/home/{username}/.python3.10 --enable-optimizations
-make
-sudo make altinstall
+ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+ cd ~/.pyenv && src/configure && make -C src
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
-Add to ~/.zshrc `export PATH=/home/savilard/.python3.10/bin:$PATH`
 
 ## IPython
 ```shell
