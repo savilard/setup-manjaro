@@ -23,6 +23,8 @@
   * [Fira-code font](#fira-code-font)
   * [Pipx](#pipx)
   * [VirtualBox](#virtualbox)
+  * [Zoom](#zoom)
+  * [Telegram](#telegram)
 <!-- TOC -->
 
 ## Update system
@@ -209,4 +211,14 @@ The easy way is to simply reboot your system. Otherwise, to start using VirtualB
 
 ```shell
 $ sudo vboxreload
+```
+
+## Zoom
+```shell
+flatpak install flathub us.zoom.Zoom
+```
+
+## Telegram
+```shell
+flatpak install flathub org.telegram.desktop
 ```
