@@ -5,13 +5,14 @@
   * [Update system](#update-system)
   * [Oh my zsh](#oh-my-zsh)
   * [1Password](#1password)
+  * [Python](#python)
+  * [Pyenv](#pyenv)
+  * [IPython](#ipython)
   * [Poetry](#poetry)
   * [Git](#git)
   * [Neovim](#neovim)
   * [Tmux](#tmux)
   * [Google chrome](#google-chrome)
-  * [Pyenv](#pyenv)
-  * [IPython](#ipython)
   * [Docker](#docker)
   * [Docker compose](#docker-compose)
   * [Podman](#podman)
@@ -48,6 +49,34 @@ git clone https://aur.archlinux.org/1password.git
 cd 1password
 makepkg -si
 ```
+
+## Python
+```shell
+mv Downloads/Python-3.10.7.tar.xz . 
+tar -xvf Python-3.10.7.tar.xz
+cd Python-3.10.7 
+/configure --prefix=/home/{username}/.python3.10 --enable-optimizations
+make
+sudo make altinstall
+echo 'export PATH=/home/{username}/.python3.10/bin:$PATH' >> ~/.zshrc
+```
+
+## Pyenv
+```shell
+ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+ cd ~/.pyenv && src/configure && make -C src
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+```
+
+## IPython
+```shell
+sudo pacman -S ipython
+```
+
+
+
 
 ## [Poetry](https://python-poetry.org/docs/#installation)
 ```shell
@@ -106,20 +135,6 @@ sudo pacman -S tmux
 ## Google chrome
 ```shell
 pamac build google-chrome
-```
-
-## Pyenv
-```shell
- git clone https://github.com/pyenv/pyenv.git ~/.pyenv
- cd ~/.pyenv && src/configure && make -C src
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-```
-
-## IPython
-```shell
-sudo pacman -S ipython
 ```
 
 ## [Docker](https://www.docker.com/)
