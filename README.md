@@ -11,6 +11,7 @@
   * [Tmux](#tmux)
   * [Google chrome](#google-chrome)
   * [Python](#python)
+  * [IPython](#ipython)
   * [Docker](#docker)
   * [Docker compose](#docker-compose)
   * [Podman](#podman)
@@ -118,6 +119,11 @@ make
 sudo make altinstall
 ```
 Add to ~/.zshrc `export PATH=/home/savilard/.python3.10/bin:$PATH`
+
+## IPython
+```shell
+sudo pacman -S ipython
+```
 
 ## [Docker](https://www.docker.com/)
 ```shell
