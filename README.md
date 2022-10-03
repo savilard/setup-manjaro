@@ -18,7 +18,7 @@
   * [Podman](#podman)
   * [Postgresql](#postgresql)
   * [Ripgrep](#ripgrep)
-  * [VSCode](#vscode)
+  * [VSCodium](#vscodium)
   * [Bat](#bat)
   * [Fira-code font](#fira-code-font)
   * [Pipx](#pipx)
@@ -170,9 +170,9 @@ sudo pacman -S postgresql
 sudo pacman -S ripgrep
 ```
 
-## [VSCode](https://code.visualstudio.com/)
+## VSCodium
 ```shell
-sudo pacman -S code
+flatpak install flathub com.vscodium.codium
 ```
 
 ## [Bat](https://github.com/sharkdp/bat)
