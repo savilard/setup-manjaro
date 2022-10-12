@@ -16,6 +16,8 @@
   * [Docker](#docker)
   * [Docker compose](#docker-compose)
   * [Podman](#podman)
+  * [Minikube](#minikube)
+  * [Kubectl](#kubectl)
   * [Postgresql](#postgresql)
   * [Ripgrep](#ripgrep)
   * [VSCodium](#vscodium)
@@ -159,6 +161,16 @@ sudo pacman -S docker-compose
 ```shell
 sudo pacman -S podman
 sudo pacman -S podman-compose
+```
+
+## Minikube
+```shell
+sudo pacman -S minikube
+```
+
+## Kubectl
+```shell
+sudo pacman -S kubectl
 ```
 
 ## [Postgresql](https://www.postgresql.org/)
