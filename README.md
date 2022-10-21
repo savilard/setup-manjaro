@@ -3,6 +3,7 @@
 <!-- TOC -->
 * [Setup manjaro](#setup-manjaro)
   * [Update system](#update-system)
+  * [Kitty](#kitty)
   * [Oh my zsh](#oh-my-zsh)
   * [1Password](#1password)
   * [Python](#python)
@@ -33,6 +34,11 @@
 ## Update system
 ```shell
 sudo pacman -Syu
+```
+
+## Kitty
+```shell
+sudo pacman -S kitty
 ```
 
 ## [Oh my zsh](https://ohmyz.sh/)
