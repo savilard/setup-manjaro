@@ -246,3 +246,8 @@ flatpak install flathub us.zoom.Zoom
 ```shell
 flatpak install flathub org.telegram.desktop
 ```
+
+## Slack
+```shell
+flatpak install flathub com.slack.Slack
+```
