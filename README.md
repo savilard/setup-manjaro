@@ -24,11 +24,13 @@
   * [VSCodium](#vscodium)
   * [Postman](#postman)
   * [Bat](#bat)
+  * [Exa](#exa)
   * [Fira-code font](#fira-code-font)
   * [Pipx](#pipx)
   * [VirtualBox](#virtualbox)
   * [Zoom](#zoom)
   * [Telegram](#telegram)
+  * [Slack](#slack)
 <!-- TOC -->
 
 ## Update system
@@ -202,6 +204,11 @@ flatpak install flathub com.getpostman.Postman
 ## [Bat](https://github.com/sharkdp/bat)
 ```shell
 sudo pacman -S bat
+```
+
+## [Exa](https://github.com/ogham/exa)
+```shell
+sudo pacman -S exa
 ```
 
 ## Fira-code font
