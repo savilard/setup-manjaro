@@ -17,6 +17,7 @@
   * [Docker](#docker)
   * [Docker compose](#docker-compose)
   * [Podman](#podman)
+  * [Lazydocker](#lazydocker)
   * [Minikube](#minikube)
   * [Kubectl](#kubectl)
   * [Postgresql](#postgresql)
@@ -87,9 +88,6 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```shell
 sudo pacman -S ipython
 ```
-
-
-
 
 ## [Poetry](https://python-poetry.org/docs/#installation)
 ```shell
@@ -171,9 +169,16 @@ sudo pacman -S podman
 sudo pacman -S podman-compose
 ```
 
+## [Lazydocker](https://github.com/jesseduffield/lazydocker)
+```shell
+yay -S lazydocker
+```
+
 ## Minikube
 ```shell
 sudo pacman -S minikube
+or
+go get github.com/jesseduffield/lazydocker
 ```
 
 ## Kubectl
