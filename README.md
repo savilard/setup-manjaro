@@ -32,6 +32,7 @@
   * [Zoom](#zoom)
   * [Telegram](#telegram)
   * [Slack](#slack)
+  * [Nodejs](#nodejs)
 <!-- TOC -->
 
 ## Update system
@@ -262,4 +263,9 @@ flatpak install flathub org.telegram.desktop
 ## Slack
 ```shell
 flatpak install flathub com.slack.Slack
+```
+
+## Nodejs
+```shell
+sudo pacman -S nodejs npm
 ```
