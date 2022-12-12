@@ -204,6 +204,11 @@ sudo pacman -S postgresql
 sudo pacman -S fzf
 ```
 
+## [nnn](https://github.com/jarun/nnn)
+```shell
+sudo pacman -S nnn
+```
+
 ## [Ripgrep](https://github.com/BurntSushi/ripgrep)
 ```shell
 sudo pacman -S ripgrep
