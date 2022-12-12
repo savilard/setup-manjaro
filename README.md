@@ -3,6 +3,7 @@
 <!-- TOC -->
 * [Setup manjaro](#setup-manjaro)
   * [Update system](#update-system)
+  * [Alacritty](#alacritty)
   * [Kitty](#kitty)
   * [Oh my zsh](#oh-my-zsh)
   * [1Password](#1password)
@@ -38,6 +39,11 @@
 ## Update system
 ```shell
 sudo pacman -Syu
+```
+
+## Alacritty
+```shell
+sudo pacman -S alacritty
 ```
 
 ## Kitty
