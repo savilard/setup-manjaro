@@ -27,7 +27,7 @@
   * [Postman](#postman)
   * [Bat](#bat)
   * [Exa](#exa)
-  * [Fira-code font](#fira-code-font)
+  * [Jetbrains Mono font](#jetbrains-mono-font)
   * [Pipx](#pipx)
   * [VirtualBox](#virtualbox)
   * [Zoom](#zoom)
@@ -223,9 +223,9 @@ sudo pacman -S bat
 sudo pacman -S exa
 ```
 
-## Fira-code font
+## Jetbrains Mono font
 ```shell
-sudo pacman -S ttf-fira-code
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 ```
 
 ## Pipx
