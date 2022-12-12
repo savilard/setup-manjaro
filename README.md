@@ -22,6 +22,7 @@
   * [Minikube](#minikube)
   * [Kubectl](#kubectl)
   * [Postgresql](#postgresql)
+  * [fzf](#fzf)
   * [Ripgrep](#ripgrep)
   * [VSCode](#vscode)
   * [Postman](#postman)
@@ -196,6 +197,11 @@ sudo pacman -S kubectl
 ## [Postgresql](https://www.postgresql.org/)
 ```shell
 sudo pacman -S postgresql
+```
+
+## [fzf](https://github.com/junegunn/fzf)
+```shell
+sudo pacman -S fzf
 ```
 
 ## [Ripgrep](https://github.com/BurntSushi/ripgrep)
