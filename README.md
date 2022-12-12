@@ -199,7 +199,7 @@ sudo pacman -S ripgrep
 
 ## VSCode
 ```shell
-flatpak install flathub com.visualstudio.code
+sudo snap install code --classic
 ```
 
 ## Postman
