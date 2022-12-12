@@ -22,7 +22,7 @@
   * [Kubectl](#kubectl)
   * [Postgresql](#postgresql)
   * [Ripgrep](#ripgrep)
-  * [VSCodium](#vscodium)
+  * [VSCode](#vscode)
   * [Postman](#postman)
   * [Bat](#bat)
   * [Exa](#exa)
@@ -197,9 +197,9 @@ sudo pacman -S postgresql
 sudo pacman -S ripgrep
 ```
 
-## VSCodium
+## VSCode
 ```shell
-flatpak install flathub com.vscodium.codium
+flatpak install flathub com.visualstudio.code
 ```
 
 ## Postman
